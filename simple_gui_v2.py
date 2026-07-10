@@ -1,11 +1,17 @@
 """
-Simple Tkinter GUI - 3 buttons + Quit
-Calls checkinMe.run(), timelines.run(), aow.run() directly (no subprocess),
-so this works correctly both on Mac (py2app) and Windows (PyInstaller).
+Deva Tools - Tkinter GUI
+Buttons call checkinMe.run(), timelines.run(), aow.run() directly (no
+subprocess), so this works correctly both bundled on Mac (py2app) and
+Windows (PyInstaller).
 
-NOTE: This is a shell/template. checkinMe.py, timelines.py, and aow.py
-need to be updated to expose a run() function and use log_callback()
-for output instead of print(), so their output shows up in the GUI.
+Folder layout expected next to this script / the built app:
+    Deva Tools.exe (or .app)
+    checkinMe.py
+    timelines.py
+    aow.py
+    CheckinMe Screenshots/
+    Timelines Screenshots/
+    AOW Screenshots/
 """
 
 import os
@@ -14,13 +20,18 @@ import threading
 import tkinter as tk
 from tkinter import messagebox, scrolledtext
 
-BASE_DIR = (
-    sys._MEIPASS if getattr(sys, "frozen", False)
-    else os.path.dirname(os.path.abspath(__file__))
-)
+# Folder the exe/app lives in when bundled, otherwise this script's folder
+if getattr(sys, "frozen", False):
+    BASE_DIR = os.path.dirname(sys.executable)
+else:
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-# Make sure Python can find checkinMe.py, timelines.py, aow.py
-sys.path.insert(0, BASE_DIR)
+# For PyInstaller onefile: bundled .py modules extract to sys._MEIPASS,
+# so Python needs that on its import path to find checkinMe/timelines/aow.
+if getattr(sys, "frozen", False) and hasattr(sys, "_MEIPASS"):
+    sys.path.insert(0, sys._MEIPASS)
+else:
+    sys.path.insert(0, BASE_DIR)
 
 import checkinMe   # noqa: E402
 import timelines   # noqa: E402
@@ -47,8 +58,8 @@ def run_task(func, label):
 
     def worker():
         try:
-            func(log_callback=log)  # scripts call log_callback(msg) instead of print()
-            log(f"'{label}' finished successfully.\n")
+            func(log_callback=log)
+            log(f"'{label}' finished.\n")
         except Exception as e:
             log(f"Failed to run '{label}': {e}\n")
             messagebox.showerror("Error", str(e))
@@ -66,7 +77,8 @@ root.title(WINDOW_TITLE)
 root.geometry("460x400")
 root.resizable(False, False)
 
-tk.Label(root, text=WINDOW_TITLE, font=("Helvetica", 16, "bold")).pack(pady=(15, 10))
+tk.Label(root, text=WINDOW_TITLE, font=(
+    "Helvetica", 16, "bold")).pack(pady=(15, 10))
 
 btn_frame = tk.Frame(root)
 btn_frame.pack(pady=5)
@@ -80,9 +92,11 @@ for btn in BUTTONS:
     ).pack(pady=5)
 
 tk.Label(root, text="Log:", anchor="w").pack(fill="x", padx=15, pady=(15, 0))
-log_box = scrolledtext.ScrolledText(root, height=10, state="disabled", wrap="word")
+log_box = scrolledtext.ScrolledText(
+    root, height=10, state="disabled", wrap="word")
 log_box.pack(fill="both", padx=15, pady=5, expand=True)
 
-tk.Button(root, text="Quit", width=15, bg="#d9534f", fg="white", command=quit_app).pack(pady=10)
+tk.Button(root, text="Quit", width=15, bg="#d9534f",
+          fg="white", command=quit_app).pack(pady=10)
 
 root.mainloop()

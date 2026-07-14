@@ -9,7 +9,7 @@ def folder_files(folder_name):
     return [os.path.join(folder_path, f) for f in os.listdir(folder_path)]
 
 
-APP = ['GUI_MAC_v1.py']  # your main script
+APP = ['GUI_Mac.py']  # your main script
 DATA_FILES = [
     'checkinMe.py',
     'timelines.py',

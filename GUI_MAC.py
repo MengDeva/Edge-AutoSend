@@ -1,77 +1,78 @@
 import os
 import sys
-import subprocess
 import threading
 import tkinter as tk
 from tkinter import messagebox, scrolledtext
 
-# =========================================================
-# EDIT THIS SECTION — set up your own buttons here
-# =========================================================
+if getattr(sys, "frozen", False):
+    BASE_DIR = os.path.dirname(sys.executable)
+else:
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-os.environ.setdefault("PYTHONIOENCODING", "utf-8")
-os.environ.setdefault("LANG", "en_US.UTF-8")
+if getattr(sys, "frozen", False) and hasattr(sys, "_MEIPASS"):
+    sys.path.insert(0, sys._MEIPASS)
+else:
+    sys.path.insert(0, BASE_DIR)
 
-BUTTONS = [
-    {
-        "label": "Send Timelines",
-        "command": [sys.executable, os.path.join(BASE_DIR, "timelines.py")],
-    },
-    {
-        "label": "Send CheckInMe",
-        "command": [sys.executable, os.path.join(BASE_DIR, "CheckinMe.py")],
-    },
-    {
-        "label": "Send AOW Reports",
-        "command": [sys.executable, os.path.join(BASE_DIR, "aow.py")],
-    },
-]
+import checkinMe   # noqa: E402
+import timelines   # noqa: E402
+import aow         # noqa: E402
 
 WINDOW_TITLE = "Deva Tools"
 
-# =========================================================
-# You shouldn't need to touch anything below this line
-# =========================================================
+TASKS = [
+    {"label": "CheckInMe", "func": checkinMe.run},
+    {"label": "Timelines", "func": timelines.run},
+    {"label": "AOW", "func": aow.run},
+]
+
+# Runtime state per task: stop_event + button widget
+for t in TASKS:
+    t["stop_event"] = None
+    t["button"] = None
 
 
 def log(msg):
     log_box.configure(state="normal")
-    log_box.insert(tk.END, msg + "\n")
+    log_box.insert(tk.END, str(msg) + "\n")
     log_box.see(tk.END)
     log_box.configure(state="disabled")
 
 
-def run_command(cmd, label):
-    log(f"Running: {label} ...")
+def toggle_task(task):
+    if task["stop_event"] is not None:
+        # Currently running -> stop it
+        task["stop_event"].set()
+        task["stop_event"] = None
+        task["button"].config(text=f"Send {task['label']}")
+        log(f"Stopping '{task['label']}' watcher...")
+        return
+
+    # Not running -> start it
+    stop_event = threading.Event()
+    task["stop_event"] = stop_event
+    task["button"].config(text=f"Stop {task['label']}")
+    log(f"Starting '{task['label']}' ...")
 
     def worker():
         try:
-            result = subprocess.run(
-                cmd,
-                capture_output=True,
-                text=True,
-                encoding="utf-8",
-                errors="replace",
-            )
-            if result.stdout:
-                log(result.stdout)
-            if result.stderr:
-                log(result.stderr)
-            if result.returncode == 0:
-                log(f"'{label}' finished successfully.\n")
-            else:
-                log(f"'{label}' exited with error code {result.returncode}\n")
-                messagebox.showerror(
-                    "Error", f"'{label}' hit an error. Check the log.")
+            task["func"](log_callback=log, stop_event=stop_event)
         except Exception as e:
-            log(f"Failed to run '{label}': {e}\n")
+            log(f"Failed to run '{task['label']}': {e}\n")
             messagebox.showerror("Error", str(e))
+        finally:
+            # If loop ended on its own (shouldn't normally happen), reset UI
+            if task["stop_event"] is stop_event:
+                task["stop_event"] = None
+                task["button"].config(text=f"Send {task['label']}")
 
     threading.Thread(target=worker, daemon=True).start()
 
 
 def quit_app():
+    for t in TASKS:
+        if t["stop_event"] is not None:
+            t["stop_event"].set()
     root.destroy()
 
 
@@ -89,27 +90,26 @@ def center_window(window):
 # ---- UI ----
 root = tk.Tk()
 root.title(WINDOW_TITLE)
-root.geometry("560x500")
+root.geometry("600x760")
 center_window(root)
 root.resizable(False, False)
 
-tk.Label(root, text="Hello, Guys", font=(
+tk.Label(root, text="Hey There,", font=(
     "Helvetica", 16, "bold")).pack(pady=(15, 10))
 
 btn_frame = tk.Frame(root)
 btn_frame.pack(pady=5)
 
-for btn in BUTTONS:
-    tk.Button(
+for task in TASKS:
+    b = tk.Button(
         btn_frame,
-        text=btn["label"],
-        width=25,
+        text=f"Send {task['label']}",
         height=2,
-        bd=0,
-        highlightbackground="#7DC9E7",
-        highlightthickness=3,
-        command=lambda c=btn["command"], l=btn["label"]: run_command(c, l),
-    ).pack(pady=5)
+        width=28,
+        command=lambda t=task: toggle_task(t),
+    )
+    b.pack(pady=5)
+    task["button"] = b
 
 tk.Label(root, text="Log:", anchor="w").pack(fill="x", padx=15, pady=(15, 0))
 log_box = scrolledtext.ScrolledText(
@@ -119,4 +119,5 @@ log_box.pack(fill="both", padx=15, pady=5, expand=True)
 tk.Button(root, text="Quit", width=15, bg="#d9534f",
           fg="black", command=quit_app).pack(pady=10)
 
+root.protocol("WM_DELETE_WINDOW", quit_app)
 root.mainloop()

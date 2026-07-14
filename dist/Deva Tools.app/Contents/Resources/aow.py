@@ -1,17 +1,31 @@
-import time
 import os
+import sys
+import time
 import requests  # pyright: ignore[reportMissingModuleSource]
 from pathlib import Path
-from datetime import datetime
+from dotenv import load_dotenv
 
 # ================== CONFIGURE THESE ==================
-# e.g., "123456:ABC-DEF1234ghIkl"
-BOT_TOKEN = "8776844710:AAFpipOq39_14b8avVLGGFNg9fp2fkVSmMM"
-CHAT_ID = "1488174949"              # e.g., "123456789"
-# Your screenshot folder
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-WATCH_FOLDER = os.path.join(BASE_DIR, "Aow Screenshots")
-DateTime = datetime.now()
+if getattr(sys, "frozen", False):
+    if sys.platform == "darwin" and ".app/Contents/MacOS" in sys.executable:
+        BASE_DIR = os.path.abspath(
+            os.path.join(os.path.dirname(sys.executable),
+                         "..", "..", "..", "..")
+        )
+    else:
+        BASE_DIR = os.path.abspath(
+            os.path.join(os.path.dirname(sys.executable), "..")
+        )
+else:
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+load_dotenv(os.path.join(BASE_DIR, ".env"))
+
+BOT_TOKEN = os.getenv("AOW_BOT_TOKEN")
+CHAT_ID = os.getenv("AOW_CHAT_ID")
+
+WATCH_FOLDER = os.path.join(BASE_DIR, "AOW Screenshots")
+POLL_SECONDS = 5
 # ===================================================
 
 TELEGRAM_API_URL = f"https://api.telegram.org/bot{BOT_TOKEN}/sendDocument"
@@ -38,24 +52,23 @@ def build_caption(supervisor, dt_list, dayoff):
     return f"{supervisor} ({dt_list})"
 
 
-def send_file(file_path):
+def send_file(file_path, log):
     supervisor, dt_list, dayoff = parse_filename(file_path)
     caption = build_caption(supervisor, dt_list, dayoff)
     try:
         with open(file_path, 'rb') as f:
-            # --- Send as document (file) instead of photo ---
-            files = {'document': f}   # 'document' field, not 'photo'
+            files = {'document': f}
             data = {'chat_id': CHAT_ID, 'caption': caption}
             response = requests.post(TELEGRAM_API_URL, files=files, data=data)
             if response.status_code == 200:
-                print(f"✅ Sent (as file): {os.path.basename(file_path)}")
+                log(f"✅ Sent (as file): {os.path.basename(file_path)}")
                 return True
             else:
-                print(f"❌ Failed: {os.path.basename(file_path)}")
-                print(f"   Response: {response.text}")
+                log(f"❌ Failed: {os.path.basename(file_path)}")
+                log(f"   Response: {response.text}")
                 return False
     except Exception as e:
-        print(f"❌ Error: {e}")
+        log(f"❌ Error: {e}")
         return False
 
 
@@ -66,45 +79,55 @@ def get_creation_time(file_path):
         return os.path.getmtime(file_path)
 
 
-def main():
-    print(f"📁 Checking folder: {WATCH_FOLDER}")
+def _scan(folder):
+    files = list(folder.glob("*.png")) + list(folder.glob("*.PNG"))
+    return list(set(files))
 
-    # Check if folder exists
+
+def run(log_callback=None, stop_event=None):
+    """Sends existing PNGs, then keeps watching the folder for new ones
+    every POLL_SECONDS until stop_event is set (or the app closes).
+    log_callback(msg) receives status lines; falls back to print()."""
+    log = log_callback if log_callback else print
+
+    log(f"📁 Checking folder: {WATCH_FOLDER}")
     folder = Path(WATCH_FOLDER)
     if not folder.exists():
-        print(f"❌ ERROR: Folder does not exist! Please check the path.")
+        log("❌ ERROR: Folder does not exist! Please check the path.")
         return
 
-    # Find all PNG files (case-insensitive)
-    png_files = list(folder.glob("*.png")) + list(folder.glob("*.PNG"))
-    png_files = list(set(png_files))
+    png_files = _scan(folder)
+    log(f"📄 Found {len(png_files)} PNG files.")
 
-    print(f"📄 Found {len(png_files)} PNG files.")
-
+    sent_files = set()
     if png_files:
         png_files.sort(key=get_creation_time)
-        print("📸 Sending existing files as documents...")
+        log("📸 Sending existing files as documents...")
         for file_path in png_files:
-            send_file(file_path)
+            send_file(file_path, log)
+            sent_files.add(file_path.name)
     else:
-        print("ℹ️  No PNG files found in this folder.")
+        log("ℹ️  No PNG files found in this folder.")
 
-    # --- Monitor for new files ---
-    # sent_files = set(f.name for f in png_files)
-    # print("⏳ Monitoring for new files...")
-    # while True:
-    #     time.sleep(5)
-    #     current = set(f.name for f in folder.glob("*.png")
-    #                   ) | set(f.name for f in folder.glob("*.PNG"))
-    #     new = current - sent_files
-    #     if new:
-    #         new_paths = [folder / name for name in new]
-    #         new_paths.sort(key=get_creation_time)
-    #         for p in new_paths:
-    #             print(f"📸 New file detected: {p.name}")
-    #             send_file(p)
-    #     sent_files = current
+    if stop_event is None:
+        return  # one-shot mode, no watching
+
+    log("⏳ Watching for new screenshots... (click the button again to stop)")
+    while not stop_event.is_set():
+        time.sleep(POLL_SECONDS)
+        if stop_event.is_set():
+            break
+        current = _scan(folder)
+        new = [f for f in current if f.name not in sent_files]
+        if new:
+            new.sort(key=get_creation_time)
+            for file_path in new:
+                log(f"📸 New file detected: {file_path.name}")
+                send_file(file_path, log)
+                sent_files.add(file_path.name)
+
+    log("🛑 Stopped watching.")
 
 
 if __name__ == "__main__":
-    main()
+    run()

@@ -125,6 +125,6 @@ def _setup_openssl():
 _setup_openssl()
 
 
-DEFAULT_SCRIPT='Run.py'
+DEFAULT_SCRIPT='GUI_MAC_v1.py'
 SCRIPT_MAP={}
 _run()

@@ -4,177 +4,21 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Resources/Aow Screenshots/Chhay Leanghout_VS3-VTC_Check-In=8.png</key>
+		<key>Resources/.env</key>
 		<data>
-		NTqN0N7raoU5Wn5mzD1NqnuH6tU=
+		dt3Jk03CyKBtI476PzGtSH/8fpE=
 		</data>
-		<key>Resources/Aow Screenshots/Dara Saroth_BDCO-RTN-DYVA_Check-In=21.png</key>
+		<key>Resources/GUI_MAC_v1.py</key>
 		<data>
-		VL/WaXtZVw27oZmF1uutOgtvC24=
+		pm70Ghvy3WvhWeY43cwrFzYXBkI=
 		</data>
-		<key>Resources/Aow Screenshots/Hak Polin_S7T-NSC-S5T_Check-In=5.png</key>
+		<key>Resources/PythonApplet.icns</key>
 		<data>
-		aTxmg6HA+HmfklJR0ViDXEkjqu8=
-		</data>
-		<key>Resources/Aow Screenshots/Heng Seng Hong_LCC-CHKP-SRS_Check-In=3.png</key>
-		<data>
-		MyqOICce+3A/a9q47/0PJcs0J6k=
-		</data>
-		<key>Resources/Aow Screenshots/Khouv Suykeang_LLC-SKT-BLSL-LSL-SK_Check-In=27.png</key>
-		<data>
-		ycboIHbscIAXAX/bKBbAYH7R7t8=
-		</data>
-		<key>Resources/Aow Screenshots/Kim Panha_NKD_Check-In=7.png</key>
-		<data>
-		8NCIUG1C3r+/8IBBL3XZViHBk98=
-		</data>
-		<key>Resources/Aow Screenshots/Leang Chhengleng_LHC-PKVT_Check-In=18.png</key>
-		<data>
-		lpNhwR1dKb4JqYTKDyw0WtRty4w=
-		</data>
-		<key>Resources/Aow Screenshots/Mom Chan Eng_HLE-RTO-SG_Check-In=15.png</key>
-		<data>
-		FdLcaaYEJGDQZSLAzTDO9oL4GN0=
-		</data>
-		<key>Resources/Aow Screenshots/Noeub Soukot_JY_Check-In=8.png</key>
-		<data>
-		ocC9rIe3yLVhRYM4I8HJuFpq29c=
-		</data>
-		<key>Resources/Aow Screenshots/Plok Sithorn_HVCHT-SKN_Check-In=10.png</key>
-		<data>
-		lNkTBh/dO1YMaQUFXDXoHxuVovI=
-		</data>
-		<key>Resources/Aow Screenshots/Touch Seanghay_VSC-SOKK_Check-In=24.png</key>
-		<data>
-		ic2rjY3d+GucDYwQsyXgSJYLioU=
-		</data>
-		<key>Resources/Aow Screenshots/Vann Kiya_HHG-BL_Check-In=9.png</key>
-		<data>
-		9wo+ytTYRepQiylV+uS8pALKv9U=
-		</data>
-		<key>Resources/Aow Screenshots/supervisor_list.txt</key>
-		<data>
-		/FcT3cVLeO2b+Qs0pJpMtNAvrXs=
-		</data>
-		<key>Resources/CheckinMe Screenshots/.DS_Store</key>
-		<data>
-		3y++sUAKzaCQmjLBz2v0kvESHgc=
-		</data>
-		<key>Resources/CheckinMe Screenshots/Chhay Leanghout_VS3-VTC_Check-In=8.png</key>
-		<data>
-		NTqN0N7raoU5Wn5mzD1NqnuH6tU=
-		</data>
-		<key>Resources/CheckinMe Screenshots/Dara Saroth_BDCO-RTN-DYVA_Check-In=21.png</key>
-		<data>
-		VL/WaXtZVw27oZmF1uutOgtvC24=
-		</data>
-		<key>Resources/CheckinMe Screenshots/Hak Polin_S7T-NSC-S5T_Check-In=5.png</key>
-		<data>
-		aTxmg6HA+HmfklJR0ViDXEkjqu8=
-		</data>
-		<key>Resources/CheckinMe Screenshots/Heng Seng Hong_LCC-CHKP-SRS_Check-In=3.png</key>
-		<data>
-		MyqOICce+3A/a9q47/0PJcs0J6k=
-		</data>
-		<key>Resources/CheckinMe Screenshots/Khouv Suykeang_LLC-SKT-BLSL-LSL-SK_Check-In=27.png</key>
-		<data>
-		ycboIHbscIAXAX/bKBbAYH7R7t8=
-		</data>
-		<key>Resources/CheckinMe Screenshots/Kim Panha_NKD_Check-In=7.png</key>
-		<data>
-		8NCIUG1C3r+/8IBBL3XZViHBk98=
-		</data>
-		<key>Resources/CheckinMe Screenshots/Leang Chhengleng_LHC-PKVT_Check-In=18.png</key>
-		<data>
-		lpNhwR1dKb4JqYTKDyw0WtRty4w=
-		</data>
-		<key>Resources/CheckinMe Screenshots/Mom Chan Eng_HLE-RTO-SG_Check-In=15.png</key>
-		<data>
-		FdLcaaYEJGDQZSLAzTDO9oL4GN0=
-		</data>
-		<key>Resources/CheckinMe Screenshots/Noeub Soukot_JY_Check-In=8.png</key>
-		<data>
-		ocC9rIe3yLVhRYM4I8HJuFpq29c=
-		</data>
-		<key>Resources/CheckinMe Screenshots/Plok Sithorn_HVCHT-SKN_Check-In=10.png</key>
-		<data>
-		lNkTBh/dO1YMaQUFXDXoHxuVovI=
-		</data>
-		<key>Resources/CheckinMe Screenshots/Touch Seanghay_VSC-SOKK_Check-In=24.png</key>
-		<data>
-		ic2rjY3d+GucDYwQsyXgSJYLioU=
-		</data>
-		<key>Resources/CheckinMe Screenshots/Vann Kiya_HHG-BL_Check-In=9.png</key>
-		<data>
-		9wo+ytTYRepQiylV+uS8pALKv9U=
-		</data>
-		<key>Resources/CheckinMe Screenshots/supervisor_list.txt</key>
-		<data>
-		/FcT3cVLeO2b+Qs0pJpMtNAvrXs=
-		</data>
-		<key>Resources/Run.py</key>
-		<data>
-		Nvhhzo56iA6xXw0w1btn+jUcP50=
-		</data>
-		<key>Resources/Timelines Screenshots/.DS_Store</key>
-		<data>
-		3y++sUAKzaCQmjLBz2v0kvESHgc=
-		</data>
-		<key>Resources/Timelines Screenshots/Chhay Leanghout_VS3-VTC.png</key>
-		<data>
-		o8vqLrHvSdPqaTDUMEycxyhhdjg=
-		</data>
-		<key>Resources/Timelines Screenshots/Dara Saroth_BDCO-RTN-DYVA.png</key>
-		<data>
-		4pxE7Hab+PEjWmtxhFUFPvBGxPQ=
-		</data>
-		<key>Resources/Timelines Screenshots/Hak Polin_S7T-NSC-S5T.png</key>
-		<data>
-		3SNN5O43Fv7l2jy0G7f2hmisq4U=
-		</data>
-		<key>Resources/Timelines Screenshots/Heng Seng Hong_LCC-CHKP-SRS_Dayoff=1.png</key>
-		<data>
-		ikvwhP9vClDmi6LvrvCHYEeqGoY=
-		</data>
-		<key>Resources/Timelines Screenshots/Khouv Suykeang_LLC-SKT-BLSL-LSL-SK.png</key>
-		<data>
-		Ge7cj0VKF2Gn2LqxPG0hK8ITXkI=
-		</data>
-		<key>Resources/Timelines Screenshots/Kim Panha_NKD.png</key>
-		<data>
-		54ayfe6srw0dMVVfvu+bGmr+918=
-		</data>
-		<key>Resources/Timelines Screenshots/Leang Chhengleng_LHC-PKVT.png</key>
-		<data>
-		eJU7Jmx+RvbWsF9GtE4f8SWwOm4=
-		</data>
-		<key>Resources/Timelines Screenshots/Mom Chan Eng_HLE-RTO-SG.png</key>
-		<data>
-		jgIoIKefCGKaONKPExRmlz7aEQg=
-		</data>
-		<key>Resources/Timelines Screenshots/Noeub Soukot_JY.png</key>
-		<data>
-		wPGXYsmA6uBC90+zHX/wpQy6EJo=
-		</data>
-		<key>Resources/Timelines Screenshots/Plok Sithorn_HVCHT-SKN.png</key>
-		<data>
-		Xc9lN8NeCvVvcePZrMSUSp8PNuo=
-		</data>
-		<key>Resources/Timelines Screenshots/Touch Seanghay_VSC-SOKK.png</key>
-		<data>
-		b4l1wv4mZppsIrArXyJ7D+h7F0Q=
-		</data>
-		<key>Resources/Timelines Screenshots/Vann Kiya_HHG-BL.png</key>
-		<data>
-		9A6pRXD4hQsCqZuSArnhY8MiCC4=
-		</data>
-		<key>Resources/Timelines Screenshots/supervisor_list.txt</key>
-		<data>
-		+pHC3UX0OyrPr6FsYLZAArmkUqU=
+		9zRqvdRORUNhZjC9sNbLi26ck94=
 		</data>
 		<key>Resources/__boot__.py</key>
 		<data>
-		ZQkyJKMmakVw1WmKL2hHpW7Ormw=
+		kEi5+qP4joGT16irP1lqCfDikJY=
 		</data>
 		<key>Resources/__error__.sh</key>
 		<data>
@@ -186,15 +30,11 @@
 		</data>
 		<key>Resources/aow.py</key>
 		<data>
-		0EZYC93VI1q/ItGTJ3wzcKgD82c=
+		Bs3kCAzr8zF6j87ftv4XeNTibvU=
 		</data>
 		<key>Resources/checkinMe.py</key>
 		<data>
-		OvzkNLDk25tVCceBbax+/VVbbJc=
-		</data>
-		<key>Resources/icon.icns</key>
-		<data>
-		1LuOg1QtslR83EB5F599Z5TMS68=
+		fNcTs182pimrpJ42cyfuUlk7Im4=
 		</data>
 		<key>Resources/include/python3.14/pyconfig.h</key>
 		<data>
@@ -211,6 +51,10 @@
 		<key>Resources/lib/python3.14/ctypes/__pycache__/_endian.cpython-314.pyc</key>
 		<data>
 		3bpOhgBNKf235y7HEdezmPKhExs=
+		</data>
+		<key>Resources/lib/python3.14/ctypes/__pycache__/util.cpython-314.pyc</key>
+		<data>
+		UHWumXSlzu2HeG1bNUKWk7Vbcm8=
 		</data>
 		<key>Resources/lib/python3.14/ctypes/_aix.py</key>
 		<data>
@@ -231,6 +75,22 @@
 		<key>Resources/lib/python3.14/ctypes/macholib/__init__.py</key>
 		<data>
 		D7wCapdx2WdecJR5C1uUUzTTy1M=
+		</data>
+		<key>Resources/lib/python3.14/ctypes/macholib/__pycache__/__init__.cpython-314.pyc</key>
+		<data>
+		SxwFuCCTiKM+PoSrp0B5I1WR8uY=
+		</data>
+		<key>Resources/lib/python3.14/ctypes/macholib/__pycache__/dyld.cpython-314.pyc</key>
+		<data>
+		KKvmd+MwSCyGqHQedB/kqUcTKIM=
+		</data>
+		<key>Resources/lib/python3.14/ctypes/macholib/__pycache__/dylib.cpython-314.pyc</key>
+		<data>
+		3Oz/Z/GDbjxA84z9AtCC/h0OSpk=
+		</data>
+		<key>Resources/lib/python3.14/ctypes/macholib/__pycache__/framework.cpython-314.pyc</key>
+		<data>
+		dlrI6yolNgGeC6Ih6zBYSJfw0TM=
 		</data>
 		<key>Resources/lib/python3.14/ctypes/macholib/dyld.py</key>
 		<data>
@@ -259,6 +119,74 @@
 		<key>Resources/lib/python3.14/ctypes/wintypes.py</key>
 		<data>
 		rNRpA6j0tsOjYL3VZ9T7Yd1IbS4=
+		</data>
+		<key>Resources/lib/python3.14/dotenv/__init__.py</key>
+		<data>
+		iLz0sXHm7bbj+tNrpNlbIlsrrQ4=
+		</data>
+		<key>Resources/lib/python3.14/dotenv/__main__.py</key>
+		<data>
+		VXfZGAL5jID5271WRCHVJJrxmDE=
+		</data>
+		<key>Resources/lib/python3.14/dotenv/__pycache__/__init__.cpython-314.pyc</key>
+		<data>
+		TeIYu32FztDzjJzqzym7gFJ2KMQ=
+		</data>
+		<key>Resources/lib/python3.14/dotenv/__pycache__/__main__.cpython-314.pyc</key>
+		<data>
+		yBg8CPzRaU7OE0m0EJTsSbzOcZU=
+		</data>
+		<key>Resources/lib/python3.14/dotenv/__pycache__/cli.cpython-314.pyc</key>
+		<data>
+		0l5GaN5ngCqlcanMUIhhhpCjVYo=
+		</data>
+		<key>Resources/lib/python3.14/dotenv/__pycache__/ipython.cpython-314.pyc</key>
+		<data>
+		HTORfKPZ9f8bZ4utZqIyewts280=
+		</data>
+		<key>Resources/lib/python3.14/dotenv/__pycache__/main.cpython-314.pyc</key>
+		<data>
+		IacES8sbDTog0evWiGUdkAxvdQ0=
+		</data>
+		<key>Resources/lib/python3.14/dotenv/__pycache__/parser.cpython-314.pyc</key>
+		<data>
+		Y8zP6dR2wR6X/KdpGSPquAwHQZ8=
+		</data>
+		<key>Resources/lib/python3.14/dotenv/__pycache__/variables.cpython-314.pyc</key>
+		<data>
+		RQM5Ptw6F/zq43kVRLR3m7Gmmlo=
+		</data>
+		<key>Resources/lib/python3.14/dotenv/__pycache__/version.cpython-314.pyc</key>
+		<data>
+		Qj7odTrAZ5OR4M2m6N33SlvzFFs=
+		</data>
+		<key>Resources/lib/python3.14/dotenv/cli.py</key>
+		<data>
+		CFzxiOw8yBkhAH0MdrecbaHp4PY=
+		</data>
+		<key>Resources/lib/python3.14/dotenv/ipython.py</key>
+		<data>
+		W5J9d/qmQCUtaJ+ktIMlxk7POvE=
+		</data>
+		<key>Resources/lib/python3.14/dotenv/main.py</key>
+		<data>
+		B4OVZO6GgnD8AzQnIqomhUZYhQ0=
+		</data>
+		<key>Resources/lib/python3.14/dotenv/parser.py</key>
+		<data>
+		Vzu6H16CzQp56EaFY/nTqUg70KE=
+		</data>
+		<key>Resources/lib/python3.14/dotenv/py.typed</key>
+		<data>
+		xutFGR6v2N6sM9rRgDsUMF+EE0c=
+		</data>
+		<key>Resources/lib/python3.14/dotenv/variables.py</key>
+		<data>
+		NksHrEYylzz6OKP7ia/KYmxFg2w=
+		</data>
+		<key>Resources/lib/python3.14/dotenv/version.py</key>
+		<data>
+		g4B7K14/fsJ25ODGZqcnFuBICLA=
 		</data>
 		<key>Resources/lib/python3.14/lib-dynload/_asyncio.so</key>
 		<data>
@@ -3490,7 +3418,7 @@
 		</data>
 		<key>Resources/lib/python314.zip</key>
 		<data>
-		0qNdr/OySYA0P5ntLzeoFHEybYo=
+		tnmKV2TbyqGMa/IZwMozQBY3Jss=
 		</data>
 		<key>Resources/openssl.ca/cert.pem</key>
 		<data>
@@ -3502,11 +3430,11 @@
 		</data>
 		<key>Resources/site.pyc</key>
 		<data>
-		CTs6wxwGSYwFdPXeRbOh4yCbNcU=
+		XH+lGBp9zdhYRpnDRG9LY6zwOWA=
 		</data>
 		<key>Resources/timelines.py</key>
 		<data>
-		hfgJ/Rp41Jv3UHb6FangYjR9s1M=
+		0m5uSJKDNWVtKvyrBALkSklCOF8=
 		</data>
 		<key>Resources/zlib.cpython-314-darwin.so</key>
 		<data>
@@ -3615,291 +3543,32 @@
 			<key>requirement</key>
 			<string>cdhash H"e47fb0f71fba85f734d4f8d4b0dd5c6134994f9f"</string>
 		</dict>
-		<key>Resources/Aow Screenshots/Chhay Leanghout_VS3-VTC_Check-In=8.png</key>
+		<key>Resources/.env</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FCT6z1GP2RE2+5HMCO3LCequBiYWu3BXr/GN9I57/VA=
+			gEMU4OOd/2zJigYQ+HPMG4dN7n5BW+BYR5rxSHHzBF4=
 			</data>
 		</dict>
-		<key>Resources/Aow Screenshots/Dara Saroth_BDCO-RTN-DYVA_Check-In=21.png</key>
+		<key>Resources/GUI_MAC_v1.py</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OzuaUdRTXKGxDQTQf7Z0VTZFgsMHV3dEZMzlmEU6Pwo=
+			mY0h2jhMit6zyy9twK2cE4blT9WVd5ZnZZOtwlHAyDs=
 			</data>
 		</dict>
-		<key>Resources/Aow Screenshots/Hak Polin_S7T-NSC-S5T_Check-In=5.png</key>
+		<key>Resources/PythonApplet.icns</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oV/l0B/YG+deoVcjTPYb4/wBCMhkpWh7Gt6p9YZRxZA=
-			</data>
-		</dict>
-		<key>Resources/Aow Screenshots/Heng Seng Hong_LCC-CHKP-SRS_Check-In=3.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Bec777pTK2q4yBXhLiN1i7xOEAdSshFUXxKMVHR/+kM=
-			</data>
-		</dict>
-		<key>Resources/Aow Screenshots/Khouv Suykeang_LLC-SKT-BLSL-LSL-SK_Check-In=27.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			tQCNJHA1BtGmzsvGJE7kFiZt+DAo0kfuacmZSZo55C0=
-			</data>
-		</dict>
-		<key>Resources/Aow Screenshots/Kim Panha_NKD_Check-In=7.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			iSIhApE5oUPPq5DJsRhbAhVtanRn9tyq28yU270S6LE=
-			</data>
-		</dict>
-		<key>Resources/Aow Screenshots/Leang Chhengleng_LHC-PKVT_Check-In=18.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			st4cWxAPx5it/+BogBcR3R6SZStrTC0niCK+3Qdeqnw=
-			</data>
-		</dict>
-		<key>Resources/Aow Screenshots/Mom Chan Eng_HLE-RTO-SG_Check-In=15.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			KyXEGqJwse0VXuGqZGRuSDCULtsHlOT2XWa1rMvOSqc=
-			</data>
-		</dict>
-		<key>Resources/Aow Screenshots/Noeub Soukot_JY_Check-In=8.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			2iJZ6eqjb6k538cPv1/fCxfN5nXN/Q2paO/1iUsRutY=
-			</data>
-		</dict>
-		<key>Resources/Aow Screenshots/Plok Sithorn_HVCHT-SKN_Check-In=10.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			HV+cLGL0cTVEzLaCQSJfWSZWNgRX3HuBY+hGenAt8AA=
-			</data>
-		</dict>
-		<key>Resources/Aow Screenshots/Touch Seanghay_VSC-SOKK_Check-In=24.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			fW48++xtGByJ2gMpeq4Occjm7ehoCrR9YDVizeRCE+w=
-			</data>
-		</dict>
-		<key>Resources/Aow Screenshots/Vann Kiya_HHG-BL_Check-In=9.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			k25bZ7C3Gb/MJVWrnk9f53k+Iwi0+z5MM/6a+5GN3Bw=
-			</data>
-		</dict>
-		<key>Resources/Aow Screenshots/supervisor_list.txt</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			LaPW2dR5avFGzhEZhDh6qITXN1N/qtG3BJV3z0pO7RY=
-			</data>
-		</dict>
-		<key>Resources/CheckinMe Screenshots/Chhay Leanghout_VS3-VTC_Check-In=8.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			FCT6z1GP2RE2+5HMCO3LCequBiYWu3BXr/GN9I57/VA=
-			</data>
-		</dict>
-		<key>Resources/CheckinMe Screenshots/Dara Saroth_BDCO-RTN-DYVA_Check-In=21.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			OzuaUdRTXKGxDQTQf7Z0VTZFgsMHV3dEZMzlmEU6Pwo=
-			</data>
-		</dict>
-		<key>Resources/CheckinMe Screenshots/Hak Polin_S7T-NSC-S5T_Check-In=5.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			oV/l0B/YG+deoVcjTPYb4/wBCMhkpWh7Gt6p9YZRxZA=
-			</data>
-		</dict>
-		<key>Resources/CheckinMe Screenshots/Heng Seng Hong_LCC-CHKP-SRS_Check-In=3.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Bec777pTK2q4yBXhLiN1i7xOEAdSshFUXxKMVHR/+kM=
-			</data>
-		</dict>
-		<key>Resources/CheckinMe Screenshots/Khouv Suykeang_LLC-SKT-BLSL-LSL-SK_Check-In=27.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			tQCNJHA1BtGmzsvGJE7kFiZt+DAo0kfuacmZSZo55C0=
-			</data>
-		</dict>
-		<key>Resources/CheckinMe Screenshots/Kim Panha_NKD_Check-In=7.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			iSIhApE5oUPPq5DJsRhbAhVtanRn9tyq28yU270S6LE=
-			</data>
-		</dict>
-		<key>Resources/CheckinMe Screenshots/Leang Chhengleng_LHC-PKVT_Check-In=18.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			st4cWxAPx5it/+BogBcR3R6SZStrTC0niCK+3Qdeqnw=
-			</data>
-		</dict>
-		<key>Resources/CheckinMe Screenshots/Mom Chan Eng_HLE-RTO-SG_Check-In=15.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			KyXEGqJwse0VXuGqZGRuSDCULtsHlOT2XWa1rMvOSqc=
-			</data>
-		</dict>
-		<key>Resources/CheckinMe Screenshots/Noeub Soukot_JY_Check-In=8.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			2iJZ6eqjb6k538cPv1/fCxfN5nXN/Q2paO/1iUsRutY=
-			</data>
-		</dict>
-		<key>Resources/CheckinMe Screenshots/Plok Sithorn_HVCHT-SKN_Check-In=10.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			HV+cLGL0cTVEzLaCQSJfWSZWNgRX3HuBY+hGenAt8AA=
-			</data>
-		</dict>
-		<key>Resources/CheckinMe Screenshots/Touch Seanghay_VSC-SOKK_Check-In=24.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			fW48++xtGByJ2gMpeq4Occjm7ehoCrR9YDVizeRCE+w=
-			</data>
-		</dict>
-		<key>Resources/CheckinMe Screenshots/Vann Kiya_HHG-BL_Check-In=9.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			k25bZ7C3Gb/MJVWrnk9f53k+Iwi0+z5MM/6a+5GN3Bw=
-			</data>
-		</dict>
-		<key>Resources/CheckinMe Screenshots/supervisor_list.txt</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			LaPW2dR5avFGzhEZhDh6qITXN1N/qtG3BJV3z0pO7RY=
-			</data>
-		</dict>
-		<key>Resources/Run.py</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			+oVdCuZZ3MiWqkjxzgE0fpU8lTsUdBMPvBTuZoLWdSI=
-			</data>
-		</dict>
-		<key>Resources/Timelines Screenshots/Chhay Leanghout_VS3-VTC.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			QjPesHVd3JU8Rz05YGxXyMgKOzh+kts5Dy1MdqYeCkI=
-			</data>
-		</dict>
-		<key>Resources/Timelines Screenshots/Dara Saroth_BDCO-RTN-DYVA.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			xTud1CpYCsGcdxgxyX9PvwLrTiVL1Sco6wecHPkxosQ=
-			</data>
-		</dict>
-		<key>Resources/Timelines Screenshots/Hak Polin_S7T-NSC-S5T.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ZU2rVaYRdqgsmqIHVYwKRAedxol8/xzH9vwN5PuRyGw=
-			</data>
-		</dict>
-		<key>Resources/Timelines Screenshots/Heng Seng Hong_LCC-CHKP-SRS_Dayoff=1.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Fxvg9pcxBZiFgqkg4is2ulFdFiYKJT8wKUuD4rEwxMI=
-			</data>
-		</dict>
-		<key>Resources/Timelines Screenshots/Khouv Suykeang_LLC-SKT-BLSL-LSL-SK.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			izSYn4LhRcVBupgD4fwLc7GmQZvnVlZkJRsD90J3bBM=
-			</data>
-		</dict>
-		<key>Resources/Timelines Screenshots/Kim Panha_NKD.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ocSSMgaRQvAz0Yq/JysqDeK+Kdh2+vbO91GiUDsXj5M=
-			</data>
-		</dict>
-		<key>Resources/Timelines Screenshots/Leang Chhengleng_LHC-PKVT.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			xkSEdRbpoS8wehqWlE+W2EVRwuMAVVF7p4WWvcsJAyI=
-			</data>
-		</dict>
-		<key>Resources/Timelines Screenshots/Mom Chan Eng_HLE-RTO-SG.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			DOmOmC7CRY6a/2O9x2Kaz4wHL7Jn0VN6bpQG6WaDLNY=
-			</data>
-		</dict>
-		<key>Resources/Timelines Screenshots/Noeub Soukot_JY.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ojRkcPd6UbJgRHHRac4c2u3n2yIuamOkyEXWzz248bw=
-			</data>
-		</dict>
-		<key>Resources/Timelines Screenshots/Plok Sithorn_HVCHT-SKN.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			mVp3+Z3bazLEd6tCSpE+VEbdMElEYqoJJ4/2yJcj+pQ=
-			</data>
-		</dict>
-		<key>Resources/Timelines Screenshots/Touch Seanghay_VSC-SOKK.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			3LZP4Zh/wnXx1sciJOklTpGDfunFE/2j5s50Ofc9bSM=
-			</data>
-		</dict>
-		<key>Resources/Timelines Screenshots/Vann Kiya_HHG-BL.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			RxxoUupHoy/RJs2/E4GlYGZ01SdYSzA9lk78CyQqJak=
-			</data>
-		</dict>
-		<key>Resources/Timelines Screenshots/supervisor_list.txt</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ysXjicIK9nlmmjVE2j5XjOeT7CdutsP/0JRJHgFAb3g=
+			eHksEElSftDQiDfMtwxo3rWW/gCukmOJdD1flXi1uxE=
 			</data>
 		</dict>
 		<key>Resources/__boot__.py</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			eXGS/sL30wdwfIcuP0pHmSHsEOacDMy+90JHhRZszPQ=
+			iikmslWSGKOl+tyBUST9JrAyZP4FkCH5scVWyp7TI5I=
 			</data>
 		</dict>
 		<key>Resources/__error__.sh</key>
@@ -3920,21 +3589,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ivSjas0VYhNDk8co2oJfCQG7oC4kYQ5jWpX2ytRo65Y=
+			yGG1XH0HBr0EScX9phIiaeuKgAriEalbr7+F44N/xa4=
 			</data>
 		</dict>
 		<key>Resources/checkinMe.py</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DJirHmmQ0ckrSKlj9prEGIu5467L2mlK0B2yPPfitvw=
-			</data>
-		</dict>
-		<key>Resources/icon.icns</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			zbvmokGnLeJJVDHVD8eq/BKuq1Oh1xbQD1Di/6hbxZM=
+			2KH0NUNKMtEagLkKN5S1rVriSBDhzADMZ1fB7SY8gzk=
 			</data>
 		</dict>
 		<key>Resources/include/python3.14/pyconfig.h</key>
@@ -3963,6 +3625,13 @@
 			<key>hash2</key>
 			<data>
 			qty/dOD+e3kns+SI0HRNUb9n1ZmRlSKuBcc8cJehtrI=
+			</data>
+		</dict>
+		<key>Resources/lib/python3.14/ctypes/__pycache__/util.cpython-314.pyc</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			jD1Hxcik0bi2uv5Aq8CSunTYAKvvqisfYU1stf4sNM0=
 			</data>
 		</dict>
 		<key>Resources/lib/python3.14/ctypes/_aix.py</key>
@@ -3998,6 +3667,34 @@
 			<key>hash2</key>
 			<data>
 			HnfAHuyPFn7RC3VPFTwMdDyOUZaunIHf/AjxKatW2/0=
+			</data>
+		</dict>
+		<key>Resources/lib/python3.14/ctypes/macholib/__pycache__/__init__.cpython-314.pyc</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			qM/yDYTATbS7ItPRqvQZVkTO/ClNaoXUDSfUGljmdM4=
+			</data>
+		</dict>
+		<key>Resources/lib/python3.14/ctypes/macholib/__pycache__/dyld.cpython-314.pyc</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			vgN3uFkq2tOsaIghPaU/rHHObGML1a2unKvW1bG0szc=
+			</data>
+		</dict>
+		<key>Resources/lib/python3.14/ctypes/macholib/__pycache__/dylib.cpython-314.pyc</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			YLddHvL+rehM7Lt5BqFXuYUsx9M3qS+GgmsZUa7zbGw=
+			</data>
+		</dict>
+		<key>Resources/lib/python3.14/ctypes/macholib/__pycache__/framework.cpython-314.pyc</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			z/oFwsVCwMEqFnIkpOrGl2YU7sU4iHdi1pnjyIVZqks=
 			</data>
 		</dict>
 		<key>Resources/lib/python3.14/ctypes/macholib/dyld.py</key>
@@ -4047,6 +3744,125 @@
 			<key>hash2</key>
 			<data>
 			1IqVFVC2bPyW+mZJfVc8QBknr82qcBcuktUsW6Fmy3k=
+			</data>
+		</dict>
+		<key>Resources/lib/python3.14/dotenv/__init__.py</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			bhY+iK6wwHZamWII6eSCuCAWXUNdn2TQFmEOuXSU7SM=
+			</data>
+		</dict>
+		<key>Resources/lib/python3.14/dotenv/__main__.py</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			N0RhLG7nHIqtlJHwwepIo+zbJPNx9sewCCRGY528h/4=
+			</data>
+		</dict>
+		<key>Resources/lib/python3.14/dotenv/__pycache__/__init__.cpython-314.pyc</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ewNpq3j524D18XOnryfLv25Yibl/MFcfbDF0Mw+URyc=
+			</data>
+		</dict>
+		<key>Resources/lib/python3.14/dotenv/__pycache__/__main__.cpython-314.pyc</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			NXpB/BrKrJHvkqZJLCbK0mliwIZrKgAXLlVCTedjAfE=
+			</data>
+		</dict>
+		<key>Resources/lib/python3.14/dotenv/__pycache__/cli.cpython-314.pyc</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			1VWYJ5EprseHd1wTtqN3hWu2kQV78AU8i083Xi/3rKs=
+			</data>
+		</dict>
+		<key>Resources/lib/python3.14/dotenv/__pycache__/ipython.cpython-314.pyc</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			PXzyIkbAzOo/ta27FXJUfszGcnMcPeWtuwdN4o1FMPY=
+			</data>
+		</dict>
+		<key>Resources/lib/python3.14/dotenv/__pycache__/main.cpython-314.pyc</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			JOlxTLRHF8E+qHL+7rwxx2mSdCO2c5nSYKqIEKLjuKE=
+			</data>
+		</dict>
+		<key>Resources/lib/python3.14/dotenv/__pycache__/parser.cpython-314.pyc</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			R9enuaLcfKKy/SKfGopxqprjo9iixeGSbQo/TV5+c1Q=
+			</data>
+		</dict>
+		<key>Resources/lib/python3.14/dotenv/__pycache__/variables.cpython-314.pyc</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			BPjFEVkddcpW+LLo4cgJiBeDwONp/zZW0KEsnKsewFY=
+			</data>
+		</dict>
+		<key>Resources/lib/python3.14/dotenv/__pycache__/version.cpython-314.pyc</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			lNVPL5d2K9hcCUd5Swz3LRM+D8X78ZT6TyyI9MmQAOI=
+			</data>
+		</dict>
+		<key>Resources/lib/python3.14/dotenv/cli.py</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			tiUqzTj1QfFqrn3SG0acZ7nckI/0T6oIf76Plg8hHHM=
+			</data>
+		</dict>
+		<key>Resources/lib/python3.14/dotenv/ipython.py</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			dHQBd9PcdCUphGb67Xwy3GkUqMSdf9XUUiNYxTZ3tYU=
+			</data>
+		</dict>
+		<key>Resources/lib/python3.14/dotenv/main.py</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			p9mexbu8E1sit8uBwPKSzjKkYOrIJE51AsTLiS5Fd4o=
+			</data>
+		</dict>
+		<key>Resources/lib/python3.14/dotenv/parser.py</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			JSJpd94tGhvnzOv4PL3DreU1Lt5v6rTK7pp8G6RnfL4=
+			</data>
+		</dict>
+		<key>Resources/lib/python3.14/dotenv/py.typed</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			8PjyZ1aVoQpRVvt71muvuq5qE+jTFZkK+GLHkhdebmc=
+			</data>
+		</dict>
+		<key>Resources/lib/python3.14/dotenv/variables.py</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			CD0qXOvvpB3q5RpBQMD9qX6vHX7SyW+SuiwGMFSlt08=
+			</data>
+		</dict>
+		<key>Resources/lib/python3.14/dotenv/version.py</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			uuf4VNtTNA93fMhoAur9YafzaKJFnczY+H1SSCSuRVQ=
 			</data>
 		</dict>
 		<key>Resources/lib/python3.14/lib-dynload/_asyncio.so</key>
@@ -9707,7 +9523,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			e2z7oHuBqrr7Egr4xcWQyoQTC0dOuamj18cPk/0bqXA=
+			s6BFi91619L5F5NzkyCOR8dzWJeIBDI72W90HTVWWEg=
 			</data>
 		</dict>
 		<key>Resources/openssl.ca/cert.pem</key>
@@ -9728,14 +9544,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cR47OXU3iitiBFtnkp3H2ExxMuW1qiJ6Q+sQoKoUsUs=
+			GrBmqPmVTpVHHoJd4RR4HjJCsnx8ft/KgoxzQP6J0Qg=
 			</data>
 		</dict>
 		<key>Resources/timelines.py</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			69sHK4okqdLCMFlgb4pqPpB2z6jqRxux62ESV5D8qao=
+			b9hx+cZy++C7qbTQyDDVoiTAySbodO/EqHmBnoDhBmc=
 			</data>
 		</dict>
 		<key>Resources/zlib.cpython-314-darwin.so</key>

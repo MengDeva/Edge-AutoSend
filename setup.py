@@ -9,20 +9,21 @@ def folder_files(folder_name):
     return [os.path.join(folder_path, f) for f in os.listdir(folder_path)]
 
 
-APP = ['Run.py']  # your main script
+APP = ['GUI_MAC_v1.py']  # your main script
 DATA_FILES = [
     'checkinMe.py',
     'timelines.py',
     'aow.py',
-    ('CheckinMe Screenshots', folder_files('CheckinMe Screenshots')),
-    ('Timelines Screenshots', folder_files('Timelines Screenshots')),
-    ('Aow Screenshots', folder_files('Aow Screenshots')),
+    '.env',
+    # ('CheckinMe Screenshots', folder_files('CheckinMe Screenshots')),
+    # ('Timelines Screenshots', folder_files('Timelines Screenshots')),
+    # ('Aow Screenshots', folder_files('Aow Screenshots')),
 ]
 OPTIONS = {
     'argv_emulation': False,
-    'packages': ['tkinter', 'requests', 'urllib3', 'certifi', 'charset_normalizer', 'idna'],
-    'includes': ['tkinter', 'requests', 'urllib3', 'certifi', 'charset_normalizer', 'idna'],
-    'iconfile': './icon.icns',  # optional, remove if you don't have one
+    'packages': ['tkinter', 'requests', 'urllib3', 'certifi', 'charset_normalizer', 'idna', 'dotenv'],
+    'includes': ['tkinter', 'requests', 'urllib3', 'certifi', 'charset_normalizer', 'idna', 'dotenv'],
+    # 'iconfile': './icon.icns',  # optional, remove if you don't have one
     'plist': {
         'CFBundleName': 'Deva Tools',
         'CFBundleShortVersionString': '1.0.0',
@@ -37,3 +38,11 @@ setup(
     options={'py2app': OPTIONS},
     setup_requires=['py2app'],
 )
+
+# --- Auto-create the screenshot folders next to the built .app ---
+# if 'py2app' in os.sys.argv:
+#     dist_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'dist')
+#     for folder_name in ['CheckinMe Screenshots', 'Timelines Screenshots', 'Aow Screenshots']:
+#         folder_path = os.path.join(dist_dir, folder_name)
+#         os.makedirs(folder_path, exist_ok=True)
+#         print(f"Created: {folder_path}")
